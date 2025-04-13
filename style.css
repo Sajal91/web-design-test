@@ -1,0 +1,255 @@
+/* General Smooth Transition */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Title Styling */
+#sign-in-UI-container h1 {
+    text-align: center;
+    color: rgb(0, 153, 0);
+    font-size: 3.5rem;
+    margin-top: 2rem;
+    height: 70px;
+}
+
+/* Sign-in UI Container */
+#sign-in-UI-container {
+    border-bottom: 0.5px solid rgb(173, 173, 173);
+    padding: 0 0 3rem 0;
+}
+
+/* Sign-in Box */
+#sign-in-box {
+    margin-top: 1.5rem;
+    width: 350px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding-inline: 0.5rem;
+    padding-block: 1rem;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.4);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Sign-in Text */
+#sign-in-box p {
+    text-align: center;
+}
+
+/* Buttons */
+#sign-in-box button {
+    width: 100% !important;
+    font-weight: 600;
+    padding-block: 0.6rem;
+    border-radius: 4px;
+    border: 1px rgb(123, 123, 123) solid !important;
+    background-color: white;
+}
+
+#sign-in-box button:hover {
+    background-color: rgb(0, 153, 0);
+    color: white;
+}
+
+/* Inputs */
+#sign-in-box form input {
+    border: 1px rgb(0, 153, 0) solid !important;
+    border-radius: 4px;
+}
+
+/* Outer Box Flex */
+#sign-in-outer-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+/* Responsive Toggle Image */
+#toggle-display-image-container {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    margin-inline: auto;
+}
+
+/* Responsive Headings */
+@media (max-width: 740px) and (min-width: 420px) {
+    #sign-in-UI-container h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 419px) {
+    #sign-in-UI-container h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Responsive Image Logic */
+@media (max-width: 999px) {
+    #toggle-display-image-container {
+        display: flex;
+    }
+
+    #sign-in-outer-box .display1-box,
+    #sign-in-outer-box .display2-box {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    #toggle-display-image-container {
+        display: none;
+    }
+
+    #sign-in-outer-box .display1-box,
+    #sign-in-outer-box .display2-box {
+        display: contents;
+    }
+}
+
+/* App Info Container */
+#app-todo-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#app-info-container {
+    padding-inline: 1rem;
+    padding-bottom: 2rem;
+}
+
+#app-info-container h2 {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#app-info-container p {
+    margin-inline: auto;
+    width: auto;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+/* Updated: reduce gap between cards */
+#app-info-container #app-todo-info {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+#app-todo-info div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.05rem;
+    font-weight: 600;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: rgba(245, 245, 245, 0.6);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+}
+
+#app-todo-info div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+#app-todo-info p {
+    width: auto;
+    text-align: center;
+}
+
+/* App Info Media Query */
+@media (max-width: 1080px) {
+    #app-info-container #app-todo-info {
+        gap: 2rem;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-block: 2rem;
+    background-color: rgba(250, 250, 250, 0.2);
+    border-top: 0.5px solid rgb(173, 173, 173);
+}
+
+footer h6 {
+    margin-inline: 2rem;
+    margin-bottom: 1rem;
+    font-size: small;
+}
+
+footer img {
+    margin-bottom: 1rem;
+    width: 200px;
+    height: 70px;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 0.5px solid rgb(173, 173, 173);
+    padding-inline: 1rem;
+    padding-block: 1rem;
+}
+
+#sign-up-btn-container a:hover {
+    background-color: rgb(0, 153, 0);
+}
+
+#sign-up-btn-container a {
+    padding-inline: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner-nav {
+    justify-content: space-between;
+}
+
+/* Updated: Nav links hover underline */
+#basic-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#basic-links-container a {
+    color: black;
+    font-weight: 600;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+#basic-links-container a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 2px;
+    width: 0;
+    background-color: rgb(0, 153, 0);
+    transition: width 0.3s ease-in-out;
+}
+
+#basic-links-container a:hover::after {
+    width: 100%;
+}
